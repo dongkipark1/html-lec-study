@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .box1 {
+            background-color: aliceblue;
+            border: 1px solid black;
+            height: 300px;
+            width: 300px;
+            display: inline-block;
+            text-align: center;
+            /* box1의 내부 텍스트를 센터로 */
+            /* 배치는 부모로부터 결정 */
+            /* 배치는 block을 쓸 수 없다. 자식은 inline을 써야한다. */
+            /* 부모 하나당 자식 하나만 배치할 수 있다. */
+        }
+
+        .inner1 {
+            background-color: red;
+            width: 200px;
+            height: 50px;
+            display: inline-block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="inner1">HelloWorld</div>
+    </div>
+    <!-- 모든 디자인 배치의 기본은 부모로부터 결정한다. -->
+    <!-- 배치라는 것은 부모의 상대적 위치를 말한다. -->
+    <!-- 부모가 자식의 위치를 결정 -->
+
+</body>
+
+</html>

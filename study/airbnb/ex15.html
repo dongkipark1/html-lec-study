@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .main {
+            position: relative;
+            padding: 0px 50px;
+        }
+
+        .nav {
+            position: absolute;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-between
+        }
+
+        .logo {
+            display: grid;
+            grid-template-columns: auto;
+            justify-content: space-between;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 10px;
+            justify-content: space-between;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+
+
+        }
+
+        .bg {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 0;
+            justify-content: start;
+        }
+
+        .bg-image {
+            display: grid;
+            grid-template-columns: 0fr 0fr;
+            width: 500px;
+            height: 500px;
+        }
+
+        .bg-text {
+            display: grid;
+            background-color: rgb(248, 236, 235);
+            padding: 20px;
+            font-size: 40pt;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="bg">
+            <div class="bg-image">
+                <img src="/image/images/vacation.jpg" width="500" height="500">
+            </div>
+            <div class="bg-text">
+                <b>New collection</b>
+            </div>
+            <div class="nav">
+                <div class="logo"><b>zuzu.</b></div>
+                <div class="menu">
+                    <div>about</div>
+                    <div>collections</div>
+                    <div>videos</div>
+                    <div>contact</div>
+                </div>
+                <div class="info">
+                    <div>🔍</div>
+                    <div>ENG</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
