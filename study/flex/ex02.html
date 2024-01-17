@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .flex-item-left {
+            background-color: #f1f1f1;
+            padding: 10px;
+            flex: 1;
+            /* %보단 숫자 비율로 적어주는게 좋다 */
+        }
+
+        .flex-item-right {
+            background-color: dodgerblue;
+            padding: 10px;
+            flex: 1;
+        }
+
+        /* Responsive layout - makes a one column-layout instead of two-column layout */
+        @media (max-width: 600px) {
+            .flex-container {
+                flex-direction: column;
+            }
+
+            /* max-width가 800px보다 작아지면 열리게 된다. */
+            .flex-item-right {
+                background-color: red;
+            }
+
+            /* 브라우저 크기의 따라 반응한다(반응형) */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="flex-item-left">1</div>
+        <div class="flex-item-right">2</div>
+    </div>
+
+</body>
+
+</html>
